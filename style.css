@@ -17,6 +17,8 @@
     --f-size-XL: 32px;
 }
 
+/* ESTILOS GENERALES */
+
 *{
     margin: 0;
     list-style:none;
@@ -31,6 +33,7 @@ body{
     background-color: rgb(232, 239, 210);
 }
 
+    /* ESTILOS DEL HEADER  */
 header{
     display: flex;
     justify-content: space-between;
@@ -38,8 +41,6 @@ header{
     padding: 0px 20px;
     background: var(--bg-color-primary);
     height: 20%;
-  
-  
     /* background-image: linear-gradient(to right, rgb(183, 198, 139), rgb(60, 58, 58)) */
     /* background-image: linear-gradient(90deg, rgb(183, 198, 139), rgb(183, 198, 139), rgb(60, 58, 58)); */
     background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
@@ -66,7 +67,6 @@ header{
     font-family: 'Dancing Script', cursive;
 }
 
-
 .lista_navbar {
     display: flex;
     flex-direction: row;
@@ -83,13 +83,18 @@ color: var(--f-color-rosa);
 font-size: var(--f-size-XL);     
 }
 
+/* AQUI COMIENZA EL MAIN  */
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    /* border: 1px red solid; */
+    padding: 50px;
 }
+
+/* SECCION HERO  */
 
 .hero-container{
     display: flex;
@@ -97,11 +102,11 @@ main{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
-    margin: 50px 100px;
+    margin: 50px 50px;
     gap: 20px;
+    /* border: 1px red solid; */
     
 }
-
 
 .hero-info{
     display: flex;
@@ -109,7 +114,6 @@ main{
     justify-content: left;
     gap: 20px;
 }
-
 
 .hero-info h2{
     font-size: var(--f-size-XL);
@@ -161,21 +165,22 @@ main{
 }
 
 .hero-image img{
-    width: 240px;
-    height: 137px;
+    width: 300px;
+    height: 171px;
     padding: 5px;
 }
 
+/* SECCION PARRAFO  */
 
-.section-info-container{
+.info-container{
     background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
-    margin: 50px 100px;
+    margin: 50px 50px;
     gap: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* letra capital */
-.section-info-texto::first-letter{
+.info-texto::first-letter{
     font-size: var(--f-size-XL);
     color: var(--f-color-oscuro);
 }

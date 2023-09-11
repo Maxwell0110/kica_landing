@@ -188,7 +188,7 @@ main{
     color: var(--f-color-oscuro);
 }
 
-.info-container div ul li{
+.info-container div ul li{ 
     list-style: circle;
     /* padding: 100px; */
 }

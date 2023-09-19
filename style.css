@@ -40,7 +40,7 @@ header{
     align-items: center;
     padding: 0px 20px;
     background: var(--bg-color-primary);
-    height: 20%;
+    /* height: 20%; */
     /* background-image: linear-gradient(to right, rgb(183, 198, 139), rgb(60, 58, 58)) */
     /* background-image: linear-gradient(90deg, rgb(183, 198, 139), rgb(183, 198, 139), rgb(60, 58, 58)); */
     background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
@@ -248,7 +248,7 @@ text-align: center;
 }
 
 .card{
-    /* transition: box-shadow 0.3s ease; */
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,5 +272,76 @@ text-align: center;
     font-size: var(--f-size-big);
 }
 
+/* SECCION CONTACTO */
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
+    margin: 50px 50px;
+    gap: 100px;
+    /* border: 1px red solid; */
+    width: 1000px;
+}
+
+.contact-img{
+    width: 500px;
+    height: 400px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 50px;
+    width: 500px;
+    height: 400px;
+
+}
+
+.contact-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    font-size: var(--f-size-big);
+
+}
+
+.contact-sub-container img{
+    width: 50px;
+    height: 50px;
+
+}
 
 
+/* footer */
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 150px;
+    height: 100px; 
+}
+footer div img{
+    width: 25px;
+    height: 25px;
+}
+.copy{ 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}

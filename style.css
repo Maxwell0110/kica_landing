@@ -183,11 +183,10 @@ main{
 
 .info-container{
     background-image: linear-gradient(90deg, rgb(183, 198, 139) 0%,rgb(183, 198, 139) 50%, rgb(117, 183, 158) 100%);
-    max-width: 80%;
     margin: 50px 0%;
-    
     padding: 0px 25px;
     font-size: var(--f-size-medium);
+    max-width: 80%;
 }
 
 /* letra capital */
@@ -235,7 +234,7 @@ color: var(--f-color-oscuro);
 }
 
 .cards-container p{
-padding: 10px;
+padding: 0px 10px;
 font-size: var(--f-size-medium);
 text-align: center;
 
@@ -245,22 +244,27 @@ text-align: center;
     color: var(--f-color-rosa);
 }
 
+.card p span{
+color: var(--f-color-rosa);
 
+}
 .cards-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
     /* border: 1px solid red; */
 
 }
 
 .card{
-  
+    width: 250px;
+    height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 20px;
     /* border: 1px solid red; */
@@ -275,7 +279,7 @@ text-align: center;
 
 .card img{
     width: 200px;
-    height: 150px;
+    min-height: 150px;
 }
 .card h3{
     font-size: var(--f-size-big);
@@ -368,11 +372,19 @@ Extra Small     Small       Medium    Large     X-Large     XX-Large
         font-size: var(--f-size-medium);    
     }
 
+    .info-container div ul li:hover{ 
+        list-style: none;
+        text-align: center;
+        color: var(--f-color-oscuro);
+        font-size: var(--f-size-medium);
+    }
+    
+    
     .info-container div ul li:nth-child(2n+1){
         color: var(--f-color-rosa);
        
     }
-
+    
 
 
     .cards-card{

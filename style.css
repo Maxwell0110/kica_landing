@@ -385,12 +385,9 @@ Extra Small     Small       Medium    Large     X-Large     XX-Large
        
     }
     
-
-
     .cards-card{
         flex-direction: column;
         gap: 10px;
-       
     }    
     
     .hero-image img{
@@ -463,6 +460,31 @@ Extra Small     Small       Medium    Large     X-Large     XX-Large
         width: 40%;
         /* height: 400px; */
     }
-
-
 }
+
+@media(max-width:425px){
+    
+    main{
+        padding: 0;
+        /* border: 1px solid red; */
+    }
+    .card{
+    width: 230px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    /* border: 1px solid red; */
+    padding: 5px 5px;
+    margin: 10px 0px;
+    background: var(--bg-color-secondary);
+    }
+
+    .contact-sub-container{
+    font-size: var(--f-size-small);
+    }
+}
+
+
